@@ -4,16 +4,14 @@
     <style>
         #bill {
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin: 0;
         background-color: rgb(11, 139, 161);
         color: whitesmoke;
         font-weight:600;
         font-size:2em;
         margin: 1em;
         }
-        #tip {
+        #tip, #tipAmount {
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin: 0;
         background-color: rgb(11, 139, 161);
         color: whitesmoke;
         font-weight:600;
@@ -22,7 +20,6 @@
         }
         #display{
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin: 0;
         background-color: rgb(85, 173, 27);
         color: whitesmoke;
         font-weight:600;
@@ -30,7 +27,7 @@
         margin: 1em;
         
         }
-        #display, #bill, #tip {
+        #display, #bill, #tip, #tipAmount {
             display:flex;
             justify-content: left;
             align-content: center;
@@ -42,7 +39,7 @@
 
         h1{
             justify-content:center;
-            background-color: rgb(11, 139, 161);
+            background-color: rgb(32, 78, 87);
             color:whitesmoke;
             margin: 1em;
             padding: 2px;
@@ -70,7 +67,7 @@
     <h3>Tip Percentage</h3>
     <input id="tip" value="15" type="number">
     <h3>Tip Amount</h3>
-    <input id='tip' value='15' type='number'>
+    <div id='tipAmount'>0.00</div>
     </main>
     <script src="tipcalcjs.js"></script>
 </body>
