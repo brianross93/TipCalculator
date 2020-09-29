@@ -6,11 +6,12 @@ const display = document.querySelector('#display')
 const billInput = document.querySelector('#bill')
 const tipInput = document.querySelector('#tip')
 const tipPaid = document.querySelector('#tipAmount')
+const submitButton = document.querySelector('#button')
 
 
 
-billInput.addEventListener('input', calculateTip)
-tipInput.addEventListener('input', calculateTip)
+    billInput.addEventListener('input', calculateTip)
+    tipInput.addEventListener('input', calculateTip)
 
 
 
@@ -25,14 +26,11 @@ function calculateTip() {
     tipPaid.innerHTML = tipAmount.toFixed(2)
     display.innerHTML = billAmount
 
-    console.log(billValue)
-    console.log(tipValue)
-
-    console.log(tipAmount)
-    console.log(billAmount)
+  
 
 }
 
 
-
-calculateTip();
+submitButton.addEventListener('click', function() {
+    calculateTip()
+})
