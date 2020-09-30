@@ -10,7 +10,7 @@
         font-size:2em;
         margin: 1em;
         }
-        #tip, #tipAmount {
+        #people, #tip, #tipAmount {
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         background-color: rgb(11, 139, 161);
         color: whitesmoke;
@@ -27,7 +27,7 @@
         margin: 1em;
         
         }
-        #display, #bill, #tip, #tipAmount {
+        #people, #display, #bill, #tip, #tipAmount {
             display:flex;
             justify-content: left;
             align-content: center;
@@ -60,15 +60,17 @@
 <body>
     <main>
     <h1>Tip Calculator</h1>
-    <h3>Bill Total</h3>
+    <h3>Bill Total Per Person</h3>
     <div id="display">0.00</div>
     <h3>Bill Amount</h3>
     <input id="bill" value="10.00" type="number">
+    <h3>People</h3>
+    <input id="people" value="1" type="number">
     <h3>Tip Percentage</h3>
     <input id="tip" value="15" type="number">
     <h3>Tip Amount</h3>
     <div id='tipAmount'>0.00</div>
-    <button type="submit">Submit</button>
+    <button type="submit" id="button">Submit</button>
 
     </main>
     <script src="tipcalcjs.js"></script>
